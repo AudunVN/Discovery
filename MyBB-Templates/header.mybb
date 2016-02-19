@@ -1,0 +1,91 @@
+<a name="top" id="top"></a>
+<div class="menu">
+<ul>
+<li id="nav-portal"><a href="{$mybb->settings['bburl']}/portal.php"><i style="font-size: 12px;" class="fa fa-home fa-fw"></i> Home</a></li>
+<li id="nav-forumsshutupwiththatimage"> <a href="{$mybb->settings['bburl']}/index.php"><i style="font-size: 12px;" class="fa fa-comments fa-fw"></i> Index</a></li>
+<li id="nav-search"> <a href="{$mybb->settings['bburl']}/search.php"><i style="font-size: 12px;" class="fa fa-search fa-fw"></i>  {$lang->toplinks_search}</a></li>
+<li id="nav-map"> <a href="{$mybb->settings['bburl']}/showthread.php?tid=126999"><i style="font-size: 12px;" class="fa fa-rocket fa-fw"></i>Download Mod</a></li>
+<li id="nav-map"> <a href="{$mybb->settings['bburl']}/eventinterface.php"><i style="font-size: 12px;" class="fa fa-group fa-fw"></i>Server Events</a></li>
+<li><a href='javascript:;' id="playerslink"><i style="font-size: 14px;" class="fa fa-caret-down fa-fw"></i>Player Utilities</a></li>
+<li><a href='javascript:;' id="playerhelplink"><i style="font-size: 14px;" class="fa fa-caret-down fa-fw"></i>Player Help</a></li>
+<li><a href='javascript:;' id="extraslink"><i style="font-size: 14px;" class="fa fa-caret-down fa-fw"></i>Forum Utilities</a></li>
+      <ul>
+            </div>
+  <div id="playerslink_popup" class="popup_menu" style="display: none;">
+      <div class="popup_item_container">
+        <a href="http://discoverygc.com/wiki/" class="popup_item">Wiki</a>
+      </div>
+      <div class="popup_item_container">
+        <a href="http://map.mrawr.net/" class="popup_item">Interactive Nav-Map</a>
+      </div>
+          <div class="popup_item_container">
+        <a href="http://lh.discoverygc.com/" class="popup_item">Mactan Network</a>
+     </div>
+      <div class="popup_item_container">
+        <a href="{$mybb->settings['bburl']}/showthread.php?tid=2334" class="popup_item">Rules</a>
+      </div>
+      <div class="popup_item_container">
+        <a href="http://discoverygc.com/wiki/techcompat_table.php" class="popup_item">Technology Chart</a>
+      </div>
+      <div class="popup_item_container">
+        <a href="{$mybb->settings['bburl']}/serverinterface.php" class="popup_item">Server Stats</a>
+      </div>
+      <div class="popup_item_container">
+        <a href="{$mybb->settings['bburl']}/serverinterface.php?action=players_online" class="popup_item">Player Status</a>
+      </div>
+      <div class="popup_item_container">
+        <a href="{$mybb->settings['bburl']}/serverinterface.php?action=faction_status" class="popup_item">Faction Status</a>
+      </div>
+      <div class="popup_item_container">
+        <a href="{$mybb->settings['bburl']}/serverinterface.php?action=base_status" class="popup_item">Player Base Status</a>
+      </div>
+      <div class="popup_item_container">
+        <a href="{$mybb->settings['bburl']}/showthread.php?tid=132301" class="popup_item">Teamspeak</a>
+      </div>
+  </div>
+    <div id="playerhelplink_popup" class="popup_menu" style="display: none;">
+      <div class="popup_item_container">
+        <a href="{$mybb->settings['bburl']}/showthread.php?tid=127003" class="popup_item">Missing Powerplant</a>
+      </div>
+      <div class="popup_item_container">
+        <a href="{$mybb->settings['bburl']}/showthread.php?tid=81037" class="popup_item">Stuck in Connecticut</a>
+      </div>
+      <div class="popup_item_container">
+        <a href="{$mybb->settings['bburl']}/showthread.php?tid=91864" class="popup_item">Account Banned</a>
+      </div>
+      <div class="popup_item_container">
+        <a href="{$mybb->settings['bburl']}/showthread.php?tid=97064" class="popup_item">Lost Ship/Account</a>
+      </div>
+  </div>
+  <div id="extraslink_popup" class="popup_menu" style="display: none;">
+      <div class="popup_item_container">
+        <a href="{$mybb->settings['bburl']}/memberlist.php" class="popup_item">Member List</a>
+      </div>
+      <div class="popup_item_container">
+        <a href="{$mybb->settings['bburl']}/stats.php" class="popup_item">Forum Stats</a>
+      </div>
+      <div class="popup_item_container">
+        <a href="{$mybb->settings['bburl']}/showteam.php" class="popup_item">Show Team</a>
+      </div>
+      <div class="popup_item_container">
+        <a href="{$mybb->settings['bburl']}/search.php?action=getnew" class="popup_item">{$lang->welcome_newposts}</a>
+      </div>
+      <div class="popup_item_container">
+        <a href="{$mybb->settings['bburl']}/search.php?action=getdaily" class="popup_item">{$lang->welcome_todaysposts}</a>
+      </div>
+      <div class="popup_item_container">
+        <a href="{$mybb->settings['bburl']}/calendar.php" class="popup_item">{$lang->toplinks_calendar}</a>
+      </div>
+      <div class="popup_item_container">
+        <a href="{$mybb->settings['bburl']}/misc.php?action=help" class="popup_item">{$lang->toplinks_help}</a>
+      </div>
+      <div class="popup_item_container">
+        <a href="{$mybb->settings['bburl']}/archive/index.php" class="popup_item">Archive Mode</a>
+      </div>
+  </div>
+<div>
+<br />
+<br />
+<br />
+<br />
+</div>
