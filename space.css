@@ -21,3 +21,12 @@
   padding-top: 2.5px !important;
 }
 /* progress bar fixes end */
+
+/* header fixes begin */
+/* Resolves issue where body container would go outside the viewport (and become unusable) in Gecko/Firefox. */
+body .menu {
+  float: none !important;
+  margin-bottom: -4em !important;
+  margin-left: 4em !important;
+}
+/* header fixes end */
