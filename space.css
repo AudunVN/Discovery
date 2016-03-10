@@ -6,6 +6,7 @@
   margin-bottom: 5px !important;
   top: 0 !important;
   bottom: 0 !important;
+  height: auto !important;
 }
 
 .progress-bar2 {
@@ -15,5 +16,7 @@
 .progress-bar2 div {
   z-index: 99 !important;
   text-shadow: 0 0 0.1em black, 0 0 0.2em black !important;
+  position: relative !important;
+  padding-top: 2.5px !important;
 }
 /* progress bar fixes end */
