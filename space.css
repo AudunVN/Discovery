@@ -1,4 +1,5 @@
 /* progress bar fixes begin */
+/* Resolves the issue where the text inside the progress bar overflows for long strings. */
 .progress-bar2 span {
   position: absolute !important;
   display: inline-block !important;
@@ -15,12 +16,8 @@
 
 .progress-bar2 div {
   z-index: 99 !important;
-  text-shadow: 0 0 0.1em black, 0 0 0.2em black !important;
+  text-shadow: 0 0 0.1em black, 0 0 0.2em black !important; /* improves text contrast a bit. */
   position: relative !important;
   padding-top: 2.5px !important;
-}
-
-#shoutbox > div.body > div.panel > form {
-  padding-right: 13px !important;
 }
 /* progress bar fixes end */
