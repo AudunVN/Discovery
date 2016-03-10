@@ -19,4 +19,8 @@
   position: relative !important;
   padding-top: 2.5px !important;
 }
+
+#shoutbox > div.body > div.panel > form {
+  padding-right: 13px !important;
+}
 /* progress bar fixes end */
