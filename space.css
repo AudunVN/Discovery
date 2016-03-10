@@ -32,3 +32,10 @@ body .menu {
   margin-right: 2.5% !important;
 }
 /* header fixes end */
+
+/* shoutbox fixes begin */
+/* compensates for the 6px inner padding and 1px border on the shoutbox form to prevent overflow. */
+#shoutbox > div.body > div.panel > form {
+  padding-right: 13px !important;
+}
+/* shoutbox fixes end */
