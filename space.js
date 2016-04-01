@@ -64,9 +64,9 @@ function prefillEditUsername() {
 function scaleNavbar() {
   /* adds css classes for   */
   if(document.querySelector(".menu").offsetHeight > 1.25*document.querySelector(".menu ul li").offsetHeight) {
-    $("body").addClass("navbarIsMultiline");
+    $("body").removeClass("navbarNotWrapped");
   } else {
-    $("body").removeClass("navbarIsMultiline");
+    $("body").addClass("navbarNotWrapped");
   }
 }
 /* function declarations end */
