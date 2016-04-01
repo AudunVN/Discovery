@@ -21,7 +21,7 @@ function loadCSS() {
 
 function resizeHandler() {
 	/* run resize handler once onload */
-	onresize();
+	onResize();
 	$(window).smartresize(function(){
     	onResize();
 	});
