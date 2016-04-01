@@ -19,6 +19,28 @@ function loadCSS() {
 
 /* function declarations start */
 
+function resizeHandler() {
+  $(window).smartresize(function(){
+	  scaleNavbar();
+  });
+}
+
+function prefillEditUsername() {
+  /* prefills the moderator edit interface with the username of the currently logged in user.  */
+  if(!!document.querySelector("input[name='postusername']")) {
+    document.querySelector("input[name='postusername']").value = document.querySelector("#editpost > table:nth-child(2) > tbody > tr:nth-child(2) > td:nth-child(2)").innerHTML.split(" <")[0];
+  }
+}
+
+function scaleNavbar() {
+  /* adds css classes for   */
+  if(document.querySelector(".menu").offsetHeight > 1.25*document.querySelector(".menu ul li").offsetHeight) {
+    $("body").removeClass("navbarNotWrapped");
+  } else {
+    $("body").addClass("navbarNotWrapped");
+  }
+}
+
 function bindHelperFunctions() {
 	(function($,sr){
 	  // debouncing function from John Hann
@@ -46,27 +68,5 @@ function bindHelperFunctions() {
 	  jQuery.fn[sr] = function(fn){  return fn ? this.bind('resize', debounce(fn)) : this.trigger(sr); };
 	
 	})(jQuery,'smartresize');
-}
-
-function resizeHandler() {
-  $(window).smartresize(function(){
-	  scaleNavbar();
-  });
-}
-
-function prefillEditUsername() {
-  /* prefills the moderator edit interface with the username of the currently logged in user.  */
-  if(!!document.querySelector("input[name='postusername']")) {
-    document.querySelector("input[name='postusername']").value = document.querySelector("#editpost > table:nth-child(2) > tbody > tr:nth-child(2) > td:nth-child(2)").innerHTML.split(" <")[0];
-  }
-}
-
-function scaleNavbar() {
-  /* adds css classes for   */
-  if(document.querySelector(".menu").offsetHeight > 1.25*document.querySelector(".menu ul li").offsetHeight) {
-    $("body").removeClass("navbarNotWrapped");
-  } else {
-    $("body").addClass("navbarNotWrapped");
-  }
 }
 /* function declarations end */
