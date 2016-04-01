@@ -34,9 +34,9 @@ body .menu {
   z-index: 10001;
 }
 
-.pagination {
+.pagination a {
   line-height: 2.5em !important;
-}
+  white-space: nowrap;
 }
 
 body.navbarNotWrapped .menu {
