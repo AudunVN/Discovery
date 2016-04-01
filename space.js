@@ -20,9 +20,15 @@ function loadCSS() {
 /* function declarations start */
 
 function resizeHandler() {
-  $(window).smartresize(function(){
-	  scaleNavbar();
-  });
+	/* run resize handler once onload */
+	onresize();
+	$(window).smartresize(function(){
+    	onResize();
+	});
+}
+
+function onResize() {
+	scaleNavbar();
 }
 
 function prefillEditUsername() {
