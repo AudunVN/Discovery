@@ -34,6 +34,11 @@ body .menu {
   z-index: 10001;
 }
 
+.pagination {
+  line-height: 2.5em !important;
+}
+}
+
 body.navbarNotWrapped .menu {
   position: fixed !important;
 }
