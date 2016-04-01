@@ -55,3 +55,9 @@ body.navbarNotWrapped .popup_menu {
   padding-right: 13px !important;
 }
 /* shoutbox fixes end */
+
+#forum table td form[action="moderation.php"] {
+    position: relative;
+    top: 0.9em;
+    line-height: 2.25em;
+}
