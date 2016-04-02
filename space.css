@@ -29,9 +29,10 @@ body .menu {
   float: none !important;
   margin-bottom: -4em !important;
   width: 95% !important;
-  margin-left: 2.5% !important;
-  margin-right: 2.5% !important;
+  padding-left: 2.5% !important;
+  padding-right: 2.5% !important;
   z-index: 10001;
+  border-bottom: 1px solid #00cffe;
 }
 
 .pagination a {
