@@ -3,11 +3,17 @@ $(document).ready(function() {
 });
 
 function spaceJSExec() {
-  bindHelperFunctions();
-  prefillEditUsername();
-  resizeHandler();
-  startSearchField();
-  loadCSS();
+	bindHelperFunctions();
+	prefillEditUsername();
+	resizeHandler();
+	loadCSS();
+	tempNavbarEdits();
+}
+
+function tempNavbarEdits() {
+	startSearchField();
+	document.querySelector(".menu li:nth-child(4) a").innerHTML = '<i style="font-size: 12px;" class="fa fa-rocket fa-fw"></i> Download'
+	document.querySelector(".menu li:nth-child(5) a").innerHTML = '<i style="font-size: 12px;" class="fa fa-group fa-fw"></i> Events'
 }
 
 function loadCSS() {
