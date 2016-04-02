@@ -1,13 +1,13 @@
-$(document).ready(function() {
-  spaceJSExec();
-});
+spaceJSExec();
 
 function spaceJSExec() {
 	loadCSS();
-	bindHelperFunctions();
-	prefillEditUsername();
-	resizeHandler();
-	tempNavbarEdits();
+	$(document).ready(function() {
+		bindHelperFunctions();
+		prefillEditUsername();
+		resizeHandler();
+		tempNavbarEdits();
+	};
 }
 
 function tempNavbarEdits() {
