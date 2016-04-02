@@ -6,6 +6,7 @@ function spaceJSExec() {
   bindHelperFunctions();
   prefillEditUsername();
   resizeHandler();
+  startSearchField();
   loadCSS();
 }
 
@@ -25,6 +26,10 @@ function resizeHandler() {
 	$(window).smartresize(function(){
     	onResize();
 	});
+}
+
+function startSearchField() {
+	document.querySelector("#nav-search").innerHTML = "<form method='post' action='search.php'><input name='keywords' type='text' placeholder='Search...'></input></form>";
 }
 
 function onResize() {
