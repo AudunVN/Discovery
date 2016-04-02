@@ -42,6 +42,10 @@ body .menu {
 	white-space: nowrap;
 }
 
+.menu #nav-rules fa {
+	color: #FF7F00;
+}
+
 body.navbarNotWrapped .menu {
 	position: fixed !important;
 }
@@ -78,7 +82,7 @@ body.navbarNotWrapped .menu #nav-search form {
 body.navbarNotWrapped .menu #nav-search form input {
 	border-radius: 0px;
 	border: none transparent 0px;
-	background: rgba(62, 62, 62, 0.63));
+	background: rgba(62, 62, 62, 0.63);
 	color: white;
 	padding-left: 0.5em;
 	width: 100%;
