@@ -7,7 +7,7 @@ function spaceJSExec() {
 		prefillEditUsername();
 		resizeHandler();
 		tempNavbarEdits();
-	};
+	});
 }
 
 function tempNavbarEdits() {
