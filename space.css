@@ -68,5 +68,7 @@ body.navbarNotWrapped .popup_menu {
 }
 
 #content > .wrapper {
-  border: none 0px transparent;
+  margin-top: -28px !important;
+  border: none 0px transparent !important;
+  border-radius: 0px !important;
 }
