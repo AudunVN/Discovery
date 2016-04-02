@@ -18,6 +18,7 @@ function tempNavbarEdits() {
 	$("#playerslink_popup > div:nth-child(4)").remove();
 	$('<div class="popup_item_container"><a href="javascript:;" id="togglesidebar" class="popup_item">Toggle Sidebar</a></div>').insertAfter("#extraslink_popup > div:nth-child(8)");
 	$("body > div.menu > ul > li:nth-child(10)").remove();
+	bindAlleySidebarToggle();
 }
 
 function bindAlleySidebarToggle() {
