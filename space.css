@@ -45,7 +45,7 @@ body.navbarNotWrapped .menu {
   position: fixed !important;
 }
 
-body.navbarNotWrapped .popup_menu {
+body.navbarNotWrapped .popup_menu:not(#whatever_name_popup) {
   position: fixed !important;
   top: 3.5em !important;
 }
