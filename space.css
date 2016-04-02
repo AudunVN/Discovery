@@ -42,7 +42,7 @@ body .menu {
 	white-space: nowrap;
 }
 
-.menu #nav-rules fa {
+.menu #nav-rules .fa {
 	color: #FF7F00;
 }
 
