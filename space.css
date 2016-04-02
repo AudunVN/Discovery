@@ -46,6 +46,14 @@ body .menu {
 	color: #FF7F00;
 }
 
+.menu #nav-adv-search {
+	padding-right: 0;
+}
+
+body.navbarNotWrapped .menu #nav-adv-search {
+	padding-right: 0.25em;
+}
+
 body.navbarNotWrapped .menu {
 	position: fixed !important;
 }
