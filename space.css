@@ -14,6 +14,10 @@
 	height: auto !important;
 }
 
+#shoutbox .text {
+	color: #7D7D7D;
+}
+
 .progress-bar2 div {
 	z-index: 99 !important;
 	text-shadow: 0 0 0.1em black, 0 0 0.2em black !important; /* improves text contrast a bit. */
