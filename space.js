@@ -47,6 +47,8 @@ function resizeHandler() {
 	onResize();
 	$(window).smartresize(function(){
     		onResize();
+    		/* wait for transition */
+    		setTimeout(function(){onResize();}, 500);
 	});
 }
 
