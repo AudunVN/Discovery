@@ -47,7 +47,7 @@ body.navbarNotWrapped .menu {
 
 body.navbarNotWrapped .popup_menu {
   position: fixed !important;
-  top: 3em !important;
+  top: 3.5em !important;
 }
 /* header fixes end */
 
