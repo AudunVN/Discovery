@@ -78,7 +78,7 @@ body.navbarNotWrapped .menu #nav-search form {
 body.navbarNotWrapped .menu #nav-search form input {
 	border-radius: 0px;
 	border: none transparent 0px;
-	background: rgba(0, 122, 150, 0.86);
+	background: rgba(62, 62, 62, 0.63));
 	color: white;
 	padding-left: 0.5em;
 	width: 100%;
