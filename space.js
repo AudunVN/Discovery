@@ -29,7 +29,7 @@ function resizeHandler() {
 }
 
 function startSearchField() {
-	document.querySelector("#nav-search").innerHTML = "<form method='post' action='search.php'><input name='keywords' type='text' placeholder='Search...'></input></form>";
+	document.querySelector("#nav-search").innerHTML = "<form method='post' action='search.php'><input onkeydown='if (event.keyCode == 13) {this.form.submit();}' name='keywords' type='text' placeholder='Search...'></input></form>";
 }
 
 function onResize() {
