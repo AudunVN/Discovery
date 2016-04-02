@@ -64,6 +64,10 @@ body.navbarNotWrapped .menu a {
 	top: 12px;
 }
 
+body.navbarNotWrapped .menu #nav-adv-search a {
+	padding: 0;
+}
+
 body.navbarNotWrapped .menu #nav-adv-search {
 	padding-right: 0.5em;
 }
