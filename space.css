@@ -63,9 +63,10 @@ body.navbarNotWrapped .popup_menu:not(#whatever_name_popup) {
 	top: 0.9em;
 	line-height: 2.25em;
 }
-#forum {
+
+#forum > div:nth-child(3) .pagination {
 	position: relative;
-	top: -1.25em;
+	margin-top: -1.25em;
 }
 
 #container {
