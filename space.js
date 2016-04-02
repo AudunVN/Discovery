@@ -12,8 +12,8 @@ function spaceJSExec() {
 
 function tempNavbarEdits() {
 	startSearchField();
-	document.querySelector(".menu li:nth-child(4) a").innerHTML = '<i style="font-size: 12px;" class="fa fa-rocket fa-fw"></i> Download'
-	document.querySelector(".menu li:nth-child(5) a").innerHTML = '<i style="font-size: 12px;" class="fa fa-group fa-fw"></i> Events'
+	document.querySelector(".menu li:nth-child(4) a").innerHTML = '<i style="font-size: 12px;" class="fa fa-rocket fa-fw"></i> Download';
+	document.querySelector(".menu li:nth-child(5) a").innerHTML = '<i style="font-size: 12px;" class="fa fa-group fa-fw"></i> Events';
 }
 
 function loadCSS() {
