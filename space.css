@@ -28,9 +28,9 @@
 body .menu {
   float: none !important;
   margin-bottom: -4em !important;
-  width: 95% !important;
-  padding-left: 2.5% !important;
-  padding-right: 2.5% !important;
+  width: 100% !important;
+  /*padding-left: 2.5% !important;
+  padding-right: 2.5% !important;*/
   z-index: 10001;
   border-bottom: 1px solid #00cffe;
 }
@@ -61,4 +61,9 @@ body.navbarNotWrapped .popup_menu {
     position: relative;
     top: 0.9em;
     line-height: 2.25em;
+}
+
+#container {
+  width: 100% !important;
+}
 }
