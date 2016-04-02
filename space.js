@@ -47,8 +47,6 @@ function resizeHandler() {
 	onResize();
 	$(window).smartresize(function(){
     		onResize();
-    		/* wait for transition */
-    		setTimeout(function(){onResize();}, 500);
 	});
 }
 
@@ -70,7 +68,7 @@ function prefillEditUsername() {
 
 function scaleNavbar() {
   /* adds css classes for   */
-  if(document.querySelector(".menu").offsetHeight > 1.1*document.querySelector(".menu ul li").offsetHeight) {
+  if(document.querySelector(".menu").offsetHeight > 1.99*document.querySelector(".menu ul li").offsetHeight) {
     $("body").removeClass("navbarNotWrapped");
   } else {
     $("body").addClass("navbarNotWrapped");
