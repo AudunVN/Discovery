@@ -65,8 +65,11 @@ body.navbarNotWrapped .popup_menu:not(#whatever_name_popup) {
 }
 
 #forum > table:nth-child(1) .pagination {
-	position: relative;
 	margin-top: -1.25em;
+}
+
+#forum > div:nth-child(3) .pagination {
+	margin-top: -1.6em;
 }
 
 #container {
