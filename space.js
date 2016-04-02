@@ -51,7 +51,7 @@ function resizeHandler() {
 }
 
 function startSearchField() {
-	document.querySelector("#nav-search").innerHTML = "<form method='post' action='search.php'><input onkeydown='if (event.keyCode == 13) {this.form.submit();}' name='keywords' type='text' placeholder='Search...'></input><input type='hidden' name='action' value='do_search'></form>";
+	document.querySelector("#nav-search").innerHTML = "<form method='post' action='search.php'><input onkeydown='if (event.keyCode == 13) {this.form.submit();}' name='keywords' type='text' placeholder='Search...'></input><input type='hidden' name='action' value='do_search'></input></form>";
 	$('<li id="nav-adv-search"><a title="Advanced search..." href="http://discoverygc.com/forums/search.php"><i style="font-size: 12px;" class="fa fa-search fa-fw"></i></a></li>').insertBefore("#nav-search");
 }
 
