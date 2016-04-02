@@ -11,7 +11,6 @@ function spaceJSExec() {
 }
 
 function tempNavbarEdits() {
-	startSearchField();
 	document.querySelector(".menu li:nth-child(4) a").innerHTML = '<i style="font-size: 12px;" class="fa fa-rocket fa-fw"></i> Download';
 	document.querySelector(".menu li:nth-child(5) a").innerHTML = '<i style="font-size: 12px;" class="fa fa-group fa-fw"></i> Events';
 	$('<li id="nav-rules"> <a href="http://discoverygc.com/forums/showthread.php?tid=2334"><i style="font-size: 12px;" class="fa fa-exclamation-triangle fa-fw"></i> Rules</a></li>').insertAfter(".menu li:nth-child(5)");
@@ -19,6 +18,7 @@ function tempNavbarEdits() {
 	$('<div class="popup_item_container"><a href="javascript:;" id="togglesidebar" class="popup_item">Toggle Sidebar</a></div>').insertAfter("#extraslink_popup > div:nth-child(8)");
 	$("body > div.menu > ul > li:nth-child(10)").remove();
 	bindAlleySidebarToggle();
+	startSearchField();
 }
 
 function bindAlleySidebarToggle() {
