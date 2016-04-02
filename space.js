@@ -3,10 +3,10 @@ $(document).ready(function() {
 });
 
 function spaceJSExec() {
+	loadCSS();
 	bindHelperFunctions();
 	prefillEditUsername();
 	resizeHandler();
-	loadCSS();
 	tempNavbarEdits();
 }
 
