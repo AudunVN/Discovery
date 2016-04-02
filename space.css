@@ -73,3 +73,12 @@ body.navbarNotWrapped .popup_menu {
   border: none 0px transparent !important;
   border-radius: 0px !important;
 }
+
+#nav-search input {
+  border-radius: 3px;
+  border: solid gray 1px;
+  background: transparent;
+  color: white;
+  padding-left: 0.15em;
+  width: 9em;
+}
