@@ -66,4 +66,7 @@ body.navbarNotWrapped .popup_menu {
 #container {
   width: 100% !important;
 }
+
+#content > .wrapper {
+  border: none 0px transparent;
 }
