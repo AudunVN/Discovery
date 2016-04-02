@@ -65,11 +65,12 @@ body.navbarNotWrapped .menu a {
 }
 
 body.navbarNotWrapped .menu #nav-adv-search a {
-	padding: 0;
+	padding: 13px 12px;
+	padding-right: 0.25em;
 }
 
 body.navbarNotWrapped .menu #nav-adv-search {
-	padding-right: 0.5em;
+	padding-right: 0;
 }
 
 body.navbarNotWrapped .menu {
