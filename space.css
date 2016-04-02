@@ -143,6 +143,10 @@ body.navbarNotWrapped .menu #nav-search form input {
 	width: 100% !important;
 }
 
+.menu li:hover i {
+    color: #00CFFE !important;
+}
+
 #content > .wrapper {
 	margin-top: -28px !important;
 	border: none 0px transparent !important;
