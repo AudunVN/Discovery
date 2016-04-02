@@ -33,6 +33,7 @@ body .menu {
   padding-right: 2.5% !important;*/
   z-index: 10001;
   border-bottom: 1px solid #00cffe;
+  box-shadow: 0 0 2px 1px #00CFFE;
 }
 
 .pagination a {
