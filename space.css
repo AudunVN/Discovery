@@ -52,11 +52,12 @@
 	color: #A4A1A1 !important;
 }
 
-.popup_item_container a {
+.popup_item_container a.popup_item {
 	/*transition: box-shadow 0.1s ease, background 0.1s ease;*/
 }
 
-.popup_item_container a:hover {
+.popup_item_container a.popup_item:hover {
+	color: white !important;
 	background: #00819E !important;
 	box-shadow: 0 0 0.3em 0 #00819E !important;
 }
