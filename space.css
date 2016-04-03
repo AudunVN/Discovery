@@ -52,6 +52,15 @@
     color: #A4A1A1 !important;
 }
 
+.popup_item_container a {
+    transition: box-shadow 0.2s ease;
+}
+
+.popup_item_container a:hover {
+    background: #00819E !important;
+    box-shadow: 0 0 0.3em 0 #00819E !important;
+}
+
 #shoutbox .text {
 	color: #969696;
 }
