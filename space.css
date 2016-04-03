@@ -14,6 +14,18 @@
 	height: auto !important;
 }
 
+/*#quickreply_e .yuieditor-toolbar {
+	width: 100%;
+	padding: 4px;
+}*/
+
+.yuieditor-toolbar + textarea {
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+	width: 100%;
+	box-sizing: border-box;
+}
+
 #shoutbox .text {
 	color: #969696;
 }
