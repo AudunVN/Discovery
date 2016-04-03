@@ -26,6 +26,11 @@
 	box-sizing: border-box;
 }
 
+.editor-control-bar {
+	box-sizing: border-box;
+	margin-bottom: 0.5em;
+}
+
 #shoutbox .text {
 	color: #969696;
 }
