@@ -71,7 +71,7 @@
 
 .progress-bar2 div {
 	z-index: 99 !important;
-	text-shadow: 0 0 0.1em black, 0 0 0.2em black !important; /* improves text contrast a bit. */
+	text-shadow: 0 0 0.1em rgba(0,0,0,0.9), 0 0 0.2em rgba(0,0,0,0.9) !important; /* improves text contrast a bit. */
 	position: relative !important;
 	padding-top: 2.5px !important;
 	padding-bottom: 2.5px !important;
