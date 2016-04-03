@@ -243,7 +243,7 @@ body.navbarNotWrapped .menu li:hover i {
 
 #footer .upper .float_right {
     margin-right: 2em !important;
-    height: 3.5em;
+    min-height: 3.5em;
     position: relative;
     top: 1.1em;
 }
