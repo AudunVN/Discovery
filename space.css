@@ -143,6 +143,10 @@ body.navbarNotWrapped .menu #nav-search form input {
 	width: 100% !important;
 }
 
+body .menu li {
+	transition: none !important;
+}
+
 body.navbarNotWrapped .menu li:hover i {
     color: #00CFFE !important;
 }
