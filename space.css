@@ -101,6 +101,11 @@ body .menu {
 	color: #FF7F00;
 }
 
+#top {
+	position: absolute;
+	top: 0;
+}
+
 .menu #nav-adv-search {
 	padding-right: 0;
 }
