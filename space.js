@@ -5,8 +5,8 @@ function spaceJSExec() {
 	$(document).ready(function() {
 		bindHelperFunctions();
 		prefillEditUsername();
-		resizeHandler();
 		tempNavbarEdits();
+		resizeHandler();
 	});
 }
 
