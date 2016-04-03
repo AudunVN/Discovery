@@ -194,6 +194,11 @@ body.navbarNotWrapped .menu #nav-search form input {
 	padding-right: 0.5em;
 }
 
+.navMenu2 {
+	padding: 1em !important;
+	padding-top: 0em;
+}
+
 .popup_menu .popup_item {
 	border-radius: 4px !important;
 }
