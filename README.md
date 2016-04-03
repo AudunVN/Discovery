@@ -15,4 +15,6 @@ Current changes from unpatched discoverygc.com:
 - Fixes the user profile dropdown avatar scaling issue
 - Fixes progress bar wrapping issues
 - Prefills the mod/admin/dev post editing username option with your own username
+- Fixes Gecko/Firefox rendering issue where the forum container would disappear outside the viewport
+- Makes better use of available viewport space
 - Plus some minor layout alignment changes here and there to get things to line up a bit better.
