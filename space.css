@@ -144,7 +144,11 @@ body.navbarNotWrapped .menu #nav-search form input {
 }
 
 body .menu li {
-	transition: none !important;
+    -webkit-transition: none !important;
+    -moz-transition: none !important;
+    -ms-transition: none !important;
+    -o-transition: none !important;
+    transition: none !important;
 }
 
 body.navbarNotWrapped .menu li:hover i {
