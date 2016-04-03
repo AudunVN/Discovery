@@ -11,6 +11,7 @@ Current changes from unpatched discoverygc.com:
 - Shortens navbar names
 - Fixes footer layout issues
 - Fixes post editor layout issues
+- Fixes user status icon alignment
 - Improves text/background contrast in many locations (e.g. the shoutbox)
 - Fixes the user profile dropdown avatar scaling issue
 - Fixes progress bar wrapping issues
