@@ -52,8 +52,6 @@
 	color: #969696;
 }
 
-#whatever_name_popup 
-
 #whatever_name_popup > div > table > tbody > tr > td:nth-child(1) {
 	vertical-align: middle !important;
 }
