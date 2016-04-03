@@ -40,8 +40,22 @@
 	width: 100% !important;
 }
 
+#whatever_name_popup > div > table > tbody > tr > td:nth-child(1) > a > img.panelavatar {
+	margin-top: 0px !important;
+	max-height: 55px;
+	max-width: 55px;
+	height: auto !important;
+	width: auto !important;
+}
+
 #shoutbox .text {
 	color: #969696;
+}
+
+#whatever_name_popup 
+
+#whatever_name_popup > div > table > tbody > tr > td:nth-child(1) {
+	vertical-align: middle !important;
 }
 
 .progress-bar2 div {
