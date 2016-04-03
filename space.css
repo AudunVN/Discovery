@@ -36,6 +36,10 @@
 	width: 0% !important;
 }
 
+#quickreply_e > tr > td:nth-child(2) > div:nth-child(1) {
+	width: 100% !important;
+}
+
 #shoutbox .text {
 	color: #969696;
 }
