@@ -45,7 +45,7 @@
 }
 
 #quickreply_e #message {
-	margin-bottom: 0.6em !important;
+	margin-bottom: -0.6em !important;
 }
 
 #quickreply_e > tr > td:nth-child(2) > div.float_left {
