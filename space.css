@@ -31,6 +31,11 @@
 	margin-bottom: 0.5em;
 }
 
+#quickreply_e > tr > td:nth-child(1) {
+	display: none !important;
+	width: 0% !important;
+}
+
 #shoutbox .text {
 	color: #969696;
 }
