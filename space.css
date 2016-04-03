@@ -57,9 +57,12 @@
 }
 
 .popup_item_container a.popup_item:hover {
-	color: white !important;
 	background: #00819E !important;
 	box-shadow: 0 0 0.3em 0 #00819E !important;
+}
+
+.popup_item_container a.popup_item:hover font {
+	color: white !important;
 }
 
 #shoutbox .text {
