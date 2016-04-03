@@ -261,3 +261,8 @@ body.navbarNotWrapped .menu li:hover i {
 	padding-left: 0.15em;
 	width: 9em;
 }
+
+.usercp_notepad {
+    width: 100% !important;
+    box-sizing: border-box;
+}
