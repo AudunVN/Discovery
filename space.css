@@ -191,6 +191,10 @@ body.navbarNotWrapped .menu li:hover i {
 	height: auto !important;
 }
 
+#forum .error {
+	text-shadow: 0px 0px 0px transparent !important;
+}
+
 #footer .upper .float_right {
     margin-right: 2em;
     height: 3.5em;
