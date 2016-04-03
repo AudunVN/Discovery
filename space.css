@@ -215,6 +215,10 @@ body.navbarNotWrapped .menu #nav-search form input {
 	vertical-align: text-top;
 }
 
+.wrapper {
+	overflow: visible !important;
+}
+
 body .menu li {
     -webkit-transition: none !important;
     -moz-transition: none !important;
