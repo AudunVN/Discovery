@@ -154,7 +154,9 @@ body.navbarNotWrapped .menu {
 	margin-bottom: -4em !important;
 }
 
-body.navbarNotWrapped .popup_menu:not(#whatever_name_popup) {
+body.navbarNotWrapped .popup_menu#playerslink_popup,
+body.navbarNotWrapped .popup_menu#playerhelplink_popup,
+body.navbarNotWrapped .popup_menu#extraslink_popup {
 	position: fixed !important;
 	top: 3.5em !important;
 }
