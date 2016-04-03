@@ -44,6 +44,18 @@
 	width: 100% !important;
 }
 
+#quickreply_e #message {
+	margin-bottom: 0.6em !important;
+}
+
+#quickreply_e > tr > td:nth-child(2) > div.float_left {
+	margin-top: 0.45em !important;
+}
+
+#quickreply_e > tr > td:nth-child(2) > div.float_right {
+	margin-top: 0 !important;
+}
+
 #whatever_name_popup > div > table > tbody > tr > td:nth-child(1) > a > img.panelavatar {
 	margin-top: 0px !important;
 	max-height: 55px;
