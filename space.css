@@ -19,6 +19,10 @@
 	padding: 4px;
 }*/
 
+#shoutbox > .head {
+	padding-top: 0 !important;
+}
+
 .yuieditor-toolbar + textarea {
 	border-top-left-radius: 0px;
 	border-top-right-radius: 0px;
