@@ -48,6 +48,10 @@
 	width: auto !important;
 }
 
+.popup_menu .popup_item font {
+    color: #A4A1A1 !important;
+}
+
 #shoutbox .text {
 	color: #969696;
 }
