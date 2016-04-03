@@ -215,20 +215,25 @@ body.navbarNotWrapped .menu #nav-search form input {
 	vertical-align: text-top;
 }
 
+#forum > form[action*="newthread.php"] > div[style*="text-align"][style*="center"] .button,
+#forum > form[action*="newpost.php"] > div[style*="text-align"][style*="center"] .button {
+	margin-bottom: 1.25em;
+}
+
 .wrapper {
 	overflow: visible !important;
 }
 
 body .menu li {
-    -webkit-transition: none !important;
-    -moz-transition: none !important;
-    -ms-transition: none !important;
-    -o-transition: none !important;
-    transition: none !important;
+	-webkit-transition: none !important;
+	-moz-transition: none !important;
+	-ms-transition: none !important;
+	-o-transition: none !important;
+	transition: none !important;
 }
 
 body.navbarNotWrapped .menu li:hover i {
-    color: #00CFFE !important;
+	color: #00CFFE !important;
 }
 
 #content > .wrapper {
@@ -246,15 +251,15 @@ body.navbarNotWrapped .menu li:hover i {
 }
 
 #footer .upper .float_right {
-    margin-right: 2em !important;
-    min-height: 3.5em;
-    position: relative;
-    top: 1.1em;
+	margin-right: 2em !important;
+	min-height: 3.5em;
+	position: relative;
+	top: 1.1em;
 }
 
 #footer .upper .float_left {
-    margin-top: 0 !important;
-    margin-left: 0 !important;
+	margin-top: 0 !important;
+	margin-left: 0 !important;
 }
 
 #nav-search input {
@@ -267,6 +272,6 @@ body.navbarNotWrapped .menu li:hover i {
 }
 
 .usercp_notepad {
-    width: 100% !important;
-    box-sizing: border-box;
+	width: 100% !important;
+	box-sizing: border-box;
 }
