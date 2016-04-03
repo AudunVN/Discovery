@@ -53,7 +53,7 @@
 }
 
 .popup_item_container a {
-	transition: box-shadow 0.2s ease, background 0.2s ease;
+	/*transition: box-shadow 0.1s ease, background 0.1s ease;*/
 }
 
 .popup_item_container a:hover {
