@@ -59,6 +59,7 @@
 .popup_item_container a:hover {
     background: #00819E !important;
     box-shadow: 0 0 0.3em 0 #00819E !important;
+    transition: box-shadow 0s ease;
 }
 
 #shoutbox .text {
