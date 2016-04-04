@@ -128,41 +128,41 @@ body .menu {
 	padding-right: 0;
 }
 
-body.navbarNotWrapped .menu li {
+body.navbarNotWrapped.touchNotSupported .menu li {
 	padding: 0;
 }
 
-body.navbarNotWrapped .menu a {
+body.navbarNotWrapped.touchNotSupported .menu a {
 	padding: 13px 12px;
 	position: relative;
 	top: 12px;
 }
 
-body.navbarNotWrapped .menu #nav-adv-search a {
+body.navbarNotWrapped.touchNotSupported .menu #nav-adv-search a {
 	padding: 13px 12px;
 	padding-right: 0.5em;
 }
 
-body.navbarNotWrapped .menu #nav-adv-search {
+body.navbarNotWrapped.touchNotSupported .menu #nav-adv-search {
 	padding-right: 0;
 }
 
-body.navbarNotWrapped .menu {
+body.navbarNotWrapped.touchNotSupported .menu {
 	position: fixed !important;
 	margin-bottom: -4em !important;
 	border-bottom: 1px solid #00cffe;
 	box-shadow: 0 0 2px 1px #00CFFE;
 }
 
-body.navbarNotWrapped .popup_menu#playerslink_popup,
-body.navbarNotWrapped .popup_menu#playerhelplink_popup,
-body.navbarNotWrapped .popup_menu#extraslink_popup {
+body.navbarNotWrapped.touchNotSupported .popup_menu#playerslink_popup,
+body.navbarNotWrapped.touchNotSupported .popup_menu#playerhelplink_popup,
+body.navbarNotWrapped.touchNotSupported .popup_menu#extraslink_popup {
 	position: fixed !important;
 	top: 3.5em !important;
 }
 
 
-body.navbarNotWrapped .menu #nav-search {
+body.navbarNotWrapped.touchNotSupported .menu #nav-search {
 	padding: 0;
 	margin: 0;
 	position: relative;
@@ -172,7 +172,7 @@ body.navbarNotWrapped .menu #nav-search {
 	margin-right: 0.5em;
 }
 
-body.navbarNotWrapped .menu #nav-search form {
+body.navbarNotWrapped.touchNotSupported .menu #nav-search form {
 	position: absolute;
 	top: 0;
 	bottom: 0;
@@ -185,7 +185,7 @@ body.navbarNotWrapped .menu #nav-search form {
 	display: block;
 }
 
-body.navbarNotWrapped .menu #nav-search form input {
+body.navbarNotWrapped.touchNotSupported .menu #nav-search form input {
 	border-radius: 0px;
 	border: none transparent 0px;
 	background: rgba(62, 62, 62, 0.63);
@@ -253,7 +253,7 @@ body .menu li {
 	transition: none !important;
 }
 
-body.navbarNotWrapped .menu li:hover i {
+body.navbarNotWrapped.touchNotSupported .menu li:hover i {
 	color: #00CFFE !important;
 }
 
@@ -297,7 +297,7 @@ body.navbarNotWrapped .menu li:hover i {
 	box-sizing: border-box;
 }
 
-body.navbarNotWrapped #posts table[id*="post"] + a[id*="pid"] {
+body.navbarNotWrapped.touchNotSupported #posts table[id*="post"] + a[id*="pid"] {
     position: relative;
     top: -3em;
 }
