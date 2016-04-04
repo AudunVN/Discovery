@@ -3,7 +3,7 @@ A repository with various in-progress and/or finished code snippets for discover
 
 Most of these fixes are ideally intended for inclusion into the relevant MyBB templates and CSS at a later point; the custom JS and CSS is mostly here because I have to find and test the fixes in the first place before I can look into integrating them if any of the fixes below are wanted/required.
 
-space.js and space.css contain the latest versions of code from the work-in-progress directories.
+space.js and space.css contain the latest versions of code from the work-in-progress directories. Testing can be done by copy-pasting the contents of space.js into your browser console, or by using a plugin for embedding custom JS such as [Custom JS for Chrome](https://chrome.google.com/webstore/detail/custom-javascript-for-web/poakhlngfciodnhlhhgnaaelnpjljija?hl=en) or [Greasemonkey for Firefox](https://addons.mozilla.org/en-US/firefox/addon/greasemonkey/); the script is available online at "http://471.no/Discovery/space.js" for this purpose.
 
 Current changes from unpatched discoverygc.com:
 - Adds a fixed navbar for wide viewports
