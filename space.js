@@ -6,6 +6,7 @@ function spaceJSExec() {
 		bindHelperFunctions();
 		prefillEditUsername();
 		addShowSigButton();
+		touchScreenCheck();
 		tempNavbarEdits();
 		resizeHandler();
 		setTimeout(resizeHandler(), 100);
@@ -15,6 +16,20 @@ function spaceJSExec() {
 function addShowSigButton() {
 	if (!!document.querySelector("#forum > form[action*='newreply'] > table:nth-child(2) > tbody > tr:nth-child(7) > td:nth-child(2) > span.smalltext > br")) {
 		$('<label><input type="checkbox" class="checkbox" name="postoptions[signature]" value="1" tabindex="6" checked="checked"> <strong>Signature:</strong> include your signature. (registered users only)</label>').insertBefore("#forum > form[action*='newreply'] > table:nth-child(2) > tbody > tr:nth-child(7) > td:nth-child(2) > span.smalltext > br");
+	}
+}
+
+function touchScreenCheck() {
+	function is_touch_device() {
+		return (('ontouchstart' in window)
+		|| (navigator.MaxTouchPoints > 0)
+		|| (navigator.msMaxTouchPoints > 0));
+	}
+	
+	if (!is_touch_device()) {
+		/* What we're actually checking for is if the viewport can change in unpredictable ways
+		 * (such as beeing pinch zoomed/rotated), as this may cause issues with the fixed navbar. */
+		$("body").addClass("touchNotSupported");
 	}
 }
 
