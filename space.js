@@ -5,10 +5,17 @@ function spaceJSExec() {
 	$(document).ready(function() {
 		bindHelperFunctions();
 		prefillEditUsername();
+		addShowSigButton();
 		tempNavbarEdits();
 		resizeHandler();
 		setTimeout(resizeHandler(), 100);
 	});
+}
+
+function addShowSigButton() {
+	if (!!document.querySelector("#forum > form[action*='newreply'] > table:nth-child(2) > tbody > tr:nth-child(7) > td:nth-child(2) > span.smalltext > br")) {
+		$('<label><input type="checkbox" class="checkbox" name="postoptions[signature]" value="1" tabindex="6" checked="checked"> <strong>Signature:</strong> include your signature. (registered users only)</label>').insertBefore("#forum > form[action*='newreply'] > table:nth-child(2) > tbody > tr:nth-child(7) > td:nth-child(2) > span.smalltext > br");
+	}
 }
 
 function tempNavbarEdits() {
