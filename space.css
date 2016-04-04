@@ -296,3 +296,8 @@ body.navbarNotWrapped .menu li:hover i {
 	width: 100% !important;
 	box-sizing: border-box;
 }
+
+body.navbarNotWrapped #posts table[id*="post"] + a[id*="pid"] {
+    position: relative;
+    top: -3em;
+}
