@@ -69,19 +69,17 @@ function bindToggles() {
 			}
 		});
 		var navbar = $.cookie('dgcnavbar');
-		if (navbar == "false") {
-			$("body").removeClass("navbarEnabled");
-		} else {
+		if (navbar == "true") {
 			$("body").addClass("navbarEnabled");
 		}
 		$('#togglenavbar').on('click',function() {
 			if (!!!document.querySelector(".navbarEnabled")) {
 				$("body").addClass("navbarEnabled");
-				$.removeCookie('dgcnavbar');
+				$.cookie('dgcnavbar', true);
 				console.log('turned navbar visible');
 			} else {
 				$("body").removeClass("navbarEnabled");
-				$.cookie('dgcnavbar',false);
+				$.removeCookie('dgcnavbar');
 				console.log('turned navbar invisible');
 			}
 		});
