@@ -14,15 +14,31 @@
 	height: auto !important;
 }
 
-/*#quickreply_e .yuieditor-toolbar {
-	width: 100%;
-	padding: 4px;
-}*/
+.progress-bar2 div {
+	z-index: 99 !important;
+	text-shadow: 0 0 0.1em rgba(0,0,0,0.9), 0 0 0.2em rgba(0,0,0,0.9) !important; /* improves text contrast a bit. */
+	position: relative !important;
+	padding-top: 2.5px !important;
+	padding-bottom: 2.5px !important;
+}
+/* progress bar fixes end */
+
+/* misc shoutbox fixes begin */
+/* compensates for the 6px inner padding and 1px border on the shoutbox form to prevent overflow. */
+#shoutbox > div.body > div.panel > form {
+	padding-right: 13px !important;
+}
+
+#shoutbox .text {
+	color: #969696;
+}
 
 #shoutbox > .head {
 	padding-top: 0 !important;
 }
+/* misc shoutbox fixes end */
 
+/* post editor fixes begin */
 .yuieditor-toolbar + textarea {
 	border-top-left-radius: 0px;
 	border-top-right-radius: 0px;
@@ -55,7 +71,9 @@
 #quickreply_e > tr > td:nth-child(2) > div.float_right {
 	margin-top: 0 !important;
 }
+/* post editor fixes end */
 
+/* user dropdown fixes begin */
 #whatever_name_popup > div > table > tbody > tr > td:nth-child(1) > a > img.panelavatar {
 	margin-top: 0px !important;
 	max-height: 55px;
@@ -64,6 +82,12 @@
 	width: auto !important;
 }
 
+#whatever_name_popup > div > table > tbody > tr > td:nth-child(1) {
+	vertical-align: middle !important;
+}
+/* user dropdown fixes end */
+
+/* misc dropdown edits begin */
 .popup_menu .popup_item font {
 	color: #A4A1A1 !important;
 }
@@ -80,23 +104,7 @@
 .popup_item_container a.popup_item:hover font {
 	color: white !important;
 }
-
-#shoutbox .text {
-	color: #969696;
-}
-
-#whatever_name_popup > div > table > tbody > tr > td:nth-child(1) {
-	vertical-align: middle !important;
-}
-
-.progress-bar2 div {
-	z-index: 99 !important;
-	text-shadow: 0 0 0.1em rgba(0,0,0,0.9), 0 0 0.2em rgba(0,0,0,0.9) !important; /* improves text contrast a bit. */
-	position: relative !important;
-	padding-top: 2.5px !important;
-	padding-bottom: 2.5px !important;
-}
-/* progress bar fixes end */
+/* misc dropdown edits end */
 
 /* header fixes begin */
 /* Resolves issue where body container would go outside the viewport (and become unusable) in Gecko/Firefox. */
@@ -108,11 +116,6 @@ body .menu {
 	padding-right: 2.5% !important;*/
 	z-index: 10001;
 	overflow: hidden;
-}
-
-.pagination a {
-	line-height: 2.5em !important;
-	white-space: nowrap;
 }
 
 .menu #nav-rules .fa {
@@ -196,24 +199,35 @@ body.navbarNotWrapped .menu #nav-search form input {
 	padding-right: 0.5em;
 }
 
-.navMenu2 {
-	padding: 0.75em !important;
-	padding-top: 0em;
-	margin-top: -1.5em;
+body .menu li {
+	-webkit-transition: none !important;
+	-moz-transition: none !important;
+	-ms-transition: none !important;
+	-o-transition: none !important;
+	transition: none !important;
 }
 
-.popup_menu .popup_item {
-	border-radius: 4px !important;
+body.navbarNotWrapped .menu li:hover i {
+	color: #00CFFE !important;
+}
+
+#nav-search input {
+	border-radius: 3px;
+	border: solid gray 1px;
+	background: transparent;
+	color: white;
+	padding-left: 0.15em;
+	width: 9em;
+}
+
+body.navbarNotWrapped #posts table[id*="post"] + a[id*="pid"] {
+    position: relative;
+    top: -3em;
 }
 /* header fixes end */
 
-/* shoutbox fixes begin */
-/* compensates for the 6px inner padding and 1px border on the shoutbox form to prevent overflow. */
-#shoutbox > div.body > div.panel > form {
-	padding-right: 13px !important;
-}
-/* shoutbox fixes end */
-
+/* uncategorized fixes begin */
+/* most of these are simple alignment/positioning tweaks. */
 #forum table td form[action="moderation.php"] {
 	position: relative;
 	top: 0.9em;
@@ -232,35 +246,20 @@ body.navbarNotWrapped .menu #nav-search form input {
 	width: 100% !important;
 }
 
-.buddy_status {
-	vertical-align: text-top;
-}
-
-#forum > form[action*="newthread.php"] > div[style*="text-align"][style*="center"] .button,
-#forum > form[action*="newpost.php"] > div[style*="text-align"][style*="center"] .button {
-	margin-bottom: 1.25em;
-}
-
-.wrapper {
-	overflow: visible !important;
-}
-
-body .menu li {
-	-webkit-transition: none !important;
-	-moz-transition: none !important;
-	-ms-transition: none !important;
-	-o-transition: none !important;
-	transition: none !important;
-}
-
-body.navbarNotWrapped .menu li:hover i {
-	color: #00CFFE !important;
-}
-
 #content > .wrapper {
 	margin-top: -28px !important;
 	border: none 0px transparent !important;
 	border-radius: 0px !important;
+}
+
+.pagination a {
+	line-height: 2.5em !important;
+	white-space: nowrap;
+}
+
+.usercp_notepad {
+	width: 100% !important;
+	box-sizing: border-box;
 }
 
 #footer .upper {
@@ -283,21 +282,26 @@ body.navbarNotWrapped .menu li:hover i {
 	margin-left: 0 !important;
 }
 
-#nav-search input {
-	border-radius: 3px;
-	border: solid gray 1px;
-	background: transparent;
-	color: white;
-	padding-left: 0.15em;
-	width: 9em;
+.wrapper {
+	overflow: visible !important;
 }
 
-.usercp_notepad {
-	width: 100% !important;
-	box-sizing: border-box;
+.buddy_status {
+	vertical-align: text-top;
 }
 
-body.navbarNotWrapped #posts table[id*="post"] + a[id*="pid"] {
-    position: relative;
-    top: -3em;
+#forum > form[action*="newthread.php"] > div[style*="text-align"][style*="center"] .button,
+#forum > form[action*="newpost.php"] > div[style*="text-align"][style*="center"] .button {
+	margin-bottom: 1.25em;
 }
+
+.navMenu2 {
+	padding: 0.75em !important;
+	padding-top: 0em;
+	margin-top: -1.5em;
+}
+
+.popup_menu .popup_item {
+	border-radius: 4px !important;
+}
+/* uncategorized fixes end */
