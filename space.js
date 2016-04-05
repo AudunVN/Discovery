@@ -76,7 +76,7 @@ function bindToggles() {
 			$("body").addClass("navbarEnabled");
 		}
 		$('#togglenavbar').on('click',function() {
-			if (!!document.querySelector(".navbarEnabled")) {
+			if (!!!document.querySelector(".navbarEnabled")) {
 				$("body").addClass("navbarEnabled");
 				$.removeCookie('dgcnavbar');
 				console.log('turned navbar visible');
