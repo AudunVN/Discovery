@@ -116,6 +116,7 @@ body .menu {
 	padding-right: 2.5% !important;*/
 	z-index: 10001;
 	overflow: hidden;
+	padding-left: 0.75em;
 }
 
 .menu #nav-rules .fa {
