@@ -38,21 +38,55 @@ function tempNavbarEdits() {
 	document.querySelector(".menu li:nth-child(5) a").innerHTML = '<i style="font-size: 12px;" class="fa fa-group fa-fw"></i> Events';
 	$('<li id="nav-rules"> <a href="http://discoverygc.com/forums/showthread.php?tid=2334"><i style="font-size: 12px;" class="fa fa-exclamation-triangle fa-fw"></i> Rules</a></li>').insertAfter(".menu li:nth-child(5)");
 	$("#playerslink_popup > div:nth-child(4)").remove();
-	$('<div class="popup_item_container"><a href="javascript:;" id="togglesidebar" class="popup_item">Toggle Sidebar</a></div>').insertBefore("#extraslink_popup > div:nth-child(1)");
+	$('<div><a href="javascript:;" id="togglesidebar">Toggle Sidebar</a></div>').insertBefore("#whatever_name");
+	$('<div><a href="javascript:;" id="togglenavbar">Toggle Navbar</a></div>').insertBefore("#whatever_name");
 	$("body > div.menu > ul > li:nth-child(10)").remove();
-	bindAlleySidebarToggle();
+	bindToggles();
 	startSearchField();
 }
 
-function bindAlleySidebarToggle() {
-	$(document).ready(function(){var sidebarcookie=$.cookie('dgcsidebar');if(sidebarcookie=="false")
-	{$('#side').hide();$('#forum').width('100%');}
-	else
-	{$('#side').show();$('#forum').width('82%');}
-	$('#togglesidebar').on('click',function(){if($('#side').css('display')=='none')
-	{$('#side').show();$('#forum').width('82%');$.removeCookie('dgcsidebar');console.log('turned sidebar visible');}
-	else
-	{$('#side').hide();$('#forum').width('100%');$.cookie('dgcsidebar',false);console.log('turned sidebar invisible');}});});
+function bindToggles() {
+	/* alley did this - it's just copied and expanded a bit. */
+	$(document).ready(function(){
+		var sidebarcookie = $.cookie('dgcsidebar');
+		if (sidebarcookie == "false") {
+			$('#side').hide();
+			$('#forum').width('100%');
+		} else {
+			$('#side').show();
+			$('#forum').width('82%');
+		}
+		$('#togglesidebar').on('click',function() {
+			if ($('#side').css('display') == 'none') {
+				$('#side').show();
+				$('#forum').width('82%');
+				$.removeCookie('dgcsidebar');
+				console.log('turned sidebar visible');
+			} else {
+				$('#side').hide();
+				$('#forum').width('100%');
+				$.cookie('dgcsidebar',false);
+				console.log('turned sidebar invisible');
+			}
+		});
+		var navbar = $.cookie('dgcnavbar');
+		if (navbar == "false") {
+			$("body").removeClass("navbarEnabled");
+		} else {
+			$("body").addClass("navbarEnabled");
+		}
+		$('#togglenavbar').on('click',function() {
+			if (!!document.querySelector(".navbarEnabled")) {
+				$("body").addClass("navbarEnabled");
+				$.removeCookie('dgcnavbar');
+				console.log('turned navbar visible');
+			} else {
+				$("body").removeClass("navbarEnabled");
+				$.cookie('dgcnavbar',false);
+				console.log('turned navbar invisible');
+			}
+		});
+	});
 }
 
 function loadCSS() {
