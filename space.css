@@ -131,6 +131,14 @@ body .menu {
 	padding-right: 0;
 }
 
+#togglenavbar {
+	display: none;
+}
+
+body.navbarNotWrapped #togglenavbar {
+	display: inline;
+}
+
 body.navbarNotWrapped.navbarEnabled .menu li {
 	padding: 0;
 }
