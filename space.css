@@ -131,6 +131,12 @@ body .menu {
 	padding-right: 0;
 }
 
+.navMenu2 a#togglesidebar,
+.navMenu2 a#togglenavbar {
+    color: #a4a1a1;
+    padding-right: 1em;
+}
+
 #togglenavbar {
 	display: none;
 }
