@@ -6,9 +6,9 @@ Most of these fixes are ideally intended for inclusion into the relevant MyBB te
 space.js and space.css contain the latest versions of code from the work-in-progress directories. Testing can be done by copy-pasting the contents of space.js into your browser console, or by using a plugin for embedding custom JS such as [Custom JS for Chrome](https://chrome.google.com/webstore/detail/custom-javascript-for-web/poakhlngfciodnhlhhgnaaelnpjljija?hl=en) or [Greasemonkey for Firefox](https://addons.mozilla.org/en-US/firefox/addon/greasemonkey/); the script is available online at "http://471.no/Discovery/space.js" for this purpose.
 
 Current changes from unpatched discoverygc.com:
-- Adds a fixed navbar for wide viewports
+- Adds a fixed navbar for wide viewports (off by default; opt-in)
 - Adds a quick-search form that replaces the "Search" button
-- Moves toggle sidebar button to the "Forum Utilities" menu
+- Moves toggle sidebar button next to user profile dropdown, adds toggle navbar button
 - Adds a "Rules" link
 - Shortens navbar names
 - Fixes footer layout issues
