@@ -110,13 +110,15 @@
 /* Resolves issue where body container would go outside the viewport (and become unusable) in Gecko/Firefox. */
 body .menu {
 	float: none !important;
-	margin-bottom: -3.5em !important;
+	margin-bottom: -3.25em !important;
 	width: 100% !important;
 	/*padding-left: 2.5% !important;
 	padding-right: 2.5% !important;*/
 	z-index: 10001;
 	overflow: hidden;
 	padding-left: 0.75em;
+	border-bottom: 1px solid #282828;
+	box-shadow: 0 0 2px 1px #282828;
 }
 
 .menu #nav-rules .fa {
@@ -136,6 +138,12 @@ body .menu {
 .navMenu2 a#togglenavbar {
     color: #a4a1a1;
     padding-right: 1em;
+}
+
+.content > .wrapper {
+	box-shadow: none !important;
+	-webkit-box-shadow: none !important;
+	-moz-box-shadow: none !important;
 }
 
 #togglenavbar {
@@ -168,8 +176,8 @@ body.navbarNotWrapped.navbarEnabled .menu #nav-adv-search {
 body.navbarNotWrapped.navbarEnabled .menu {
 	position: fixed !important;
 	margin-bottom: -4em !important;
-	border-bottom: 1px solid #00cffe;
-	box-shadow: 0 0 2px 1px #00CFFE;
+	/*border-bottom: 1px solid #00cffe;
+	box-shadow: 0 0 2px 1px #00CFFE;*/
 }
 
 body.navbarNotWrapped.navbarEnabled .popup_menu#playerslink_popup,
