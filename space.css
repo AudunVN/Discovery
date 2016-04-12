@@ -140,12 +140,6 @@ body .menu {
     padding-right: 1em;
 }
 
-.content > .wrapper {
-	box-shadow: none !important;
-	-webkit-box-shadow: none !important;
-	-moz-box-shadow: none !important;
-}
-
 #togglenavbar {
 	display: none;
 }
@@ -273,6 +267,9 @@ body.navbarNotWrapped.navbarEnabled #posts table[id*="post"] + a[id*="pid"] {
 	margin-top: -28px !important;
 	border: none 0px transparent !important;
 	border-radius: 0px !important;
+	box-shadow: none !important;
+	-webkit-box-shadow: none !important;
+	-moz-box-shadow: none !important;
 }
 
 .pagination a {
