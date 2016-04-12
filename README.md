@@ -22,3 +22,9 @@ Current changes from unpatched discoverygc.com:
 - Makes better use of available viewport space
 - Adds "show signature" input to new reply form
 - Plus some minor layout alignment changes here and there to get things to line up a bit better.
+
+Screenshots (03.04.2016):
+- http://img.mrawr.net/DGCWebTest_08.png
+- http://img.mrawr.net/DGCWebTest_09.png
+- http://img.mrawr.net/DGCWebTest_10.png
+- http://img.mrawr.net/DGCWebTest_11.png
