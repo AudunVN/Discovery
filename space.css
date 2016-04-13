@@ -116,7 +116,8 @@ body .menu {
 	padding-right: 2.5% !important;*/
 	z-index: 10001;
 	overflow: hidden;
-	padding-left: 0.75em;
+	/*padding-left: 0.75em;*/
+	box-sizing: border-box;
 	border-bottom: 1px solid #282828;
 	box-shadow: 0 0 2px 1px #282828;
 }
