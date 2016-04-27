@@ -308,7 +308,7 @@ body.navbarNotWrapped.navbarEnabled #posts table[id*="post"] + a[id*="pid"] {
 }
 
 .post_body img {
-    max-width: 700px;
+    max-width: 700px !important;
 }
 
 .buddy_status {
