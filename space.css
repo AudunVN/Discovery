@@ -307,6 +307,10 @@ body.navbarNotWrapped.navbarEnabled #posts table[id*="post"] + a[id*="pid"] {
 	overflow: visible !important;
 }
 
+.post_body img {
+    max-width: 700px;
+}
+
 .buddy_status {
 	vertical-align: text-top;
 }
