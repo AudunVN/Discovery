@@ -39,7 +39,7 @@ function tempNavbarEdits() {
 	$('<li id="nav-rules"> <a href="http://discoverygc.com/forums/showthread.php?tid=2334"><i style="font-size: 12px;" class="fa fa-exclamation-triangle fa-fw"></i> Rules</a></li>').insertAfter(".menu li:nth-child(5)");
 	$("#playerslink_popup > div:nth-child(4)").remove();*/
 	$('<a href="javascript:;" id="togglenavbar">Toggle Navbar</a><a href="javascript:;" id="togglesidebar">Toggle Sidebar</a>').insertBefore("#whatever_name");
-	$("body > div.menu > ul > li:nth-child(10)").remove();
+	$("body > div.menu > ul > li:nth-child(9)").remove();
 	bindToggles();
 	startSearchField();
 }
