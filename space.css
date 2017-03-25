@@ -173,6 +173,10 @@ body .menu {
 	color: #FF7F00;
 }
 
+.menu a#togglesidebar {
+    display: none;
+}
+
 #top {
 	position: absolute;
 	top: 0;
