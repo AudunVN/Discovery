@@ -76,6 +76,10 @@
 	padding-right: 13px !important;
 }
 
+#shoutbox .entry .avatar {
+    text-align: center;
+}
+
 #shoutbox .text {
 	color: #969696;
 }
