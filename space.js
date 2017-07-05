@@ -46,43 +46,41 @@ function tempNavbarEdits() {
 
 function bindToggles() {
 	/* alley did this - it's just copied and expanded a bit. */
-	$(document).ready(function(){
-		var sidebarcookie = $.cookie('dgcsidebar');
-		if (sidebarcookie == "false") {
-			$('#side').hide();
-			$('#forum').width('100%');
-		} else {
+	var sidebarcookie = $.cookie('dgcsidebar');
+	if (sidebarcookie == "false") {
+		$('#side').hide();
+		$('#forum').width('100%');
+	} else {
+		$('#side').show();
+		$('#forum').width('82%');
+	}
+	$('#togglesidebar').on('click',function() {
+		if ($('#side').css('display') == 'none') {
 			$('#side').show();
 			$('#forum').width('82%');
+			$.removeCookie('dgcsidebar');
+			console.log('turned sidebar visible');
+		} else {
+			$('#side').hide();
+			$('#forum').width('100%');
+			$.cookie('dgcsidebar',false);
+			console.log('turned sidebar invisible');
 		}
-		$('#togglesidebar').on('click',function() {
-			if ($('#side').css('display') == 'none') {
-				$('#side').show();
-				$('#forum').width('82%');
-				$.removeCookie('dgcsidebar');
-				console.log('turned sidebar visible');
-			} else {
-				$('#side').hide();
-				$('#forum').width('100%');
-				$.cookie('dgcsidebar',false);
-				console.log('turned sidebar invisible');
-			}
-		});
-		var navbar = $.cookie('dgcnavbar');
-		if (navbar == "true") {
+	});
+	var navbar = $.cookie('dgcnavbar');
+	if (navbar == "true") {
+		$("body").addClass("navbarEnabled");
+	}
+	$('#togglenavbar').on('click',function() {
+		if (!!!document.querySelector(".navbarEnabled")) {
 			$("body").addClass("navbarEnabled");
+			$.cookie('dgcnavbar', true);
+			console.log('turned navbar visible');
+		} else {
+			$("body").removeClass("navbarEnabled");
+			$.removeCookie('dgcnavbar');
+			console.log('turned navbar invisible');
 		}
-		$('#togglenavbar').on('click',function() {
-			if (!!!document.querySelector(".navbarEnabled")) {
-				$("body").addClass("navbarEnabled");
-				$.cookie('dgcnavbar', true);
-				console.log('turned navbar visible');
-			} else {
-				$("body").removeClass("navbarEnabled");
-				$.removeCookie('dgcnavbar');
-				console.log('turned navbar invisible');
-			}
-		});
 	});
 }
 
