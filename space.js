@@ -47,7 +47,7 @@ function tempNavbarEdits() {
 
 function bindToggles() {
 	/* alley did this - it's just copied and expanded a bit. */
-	var sidebarcookie = $.cookie('dgcsidebar');
+	var sidebarcookie = Cookies.get('dgcsidebar');
 	if (sidebarcookie == "false") {
 		$('#side').hide();
 		$('#forum').width('100%');
@@ -59,27 +59,27 @@ function bindToggles() {
 		if ($('#side').css('display') == 'none') {
 			$('#side').show();
 			$('#forum').width('82%');
-			$.removeCookie('dgcsidebar');
+			Cookies.remove('dgcsidebar');
 			console.log('turned sidebar visible');
 		} else {
 			$('#side').hide();
 			$('#forum').width('100%');
-			$.cookie('dgcsidebar',false);
+			Cookies.set('dgcsidebar',false);
 			console.log('turned sidebar invisible');
 		}
 	});
-	var navbar = $.cookie('dgcnavbar');
+	var navbar = Cookies.get('dgcnavbar');
 	if (navbar == "true") {
 		$("body").addClass("navbarEnabled");
 	}
 	$('#togglenavbar').on('click',function() {
 		if (!!!document.querySelector(".navbarEnabled")) {
 			$("body").addClass("navbarEnabled");
-			$.cookie('dgcnavbar', true);
+			Cookies.set('dgcnavbar', true);
 			console.log('turned navbar visible');
 		} else {
 			$("body").removeClass("navbarEnabled");
-			$.removeCookie('dgcnavbar');
+			Cookies.remove('dgcnavbar');
 			console.log('turned navbar invisible');
 		}
 	});
