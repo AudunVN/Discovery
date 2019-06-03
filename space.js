@@ -89,7 +89,7 @@ function loadCSS() {
 	var cssRefObject=document.createElement("link");
 	cssRefObject.setAttribute("rel", "stylesheet");
 	cssRefObject.setAttribute("type", "text/css");
-	cssRefObject.setAttribute("href", "http://471.no/Discovery/space.css");
+	cssRefObject.setAttribute("href", "https://471.no/Discovery/space.css");
 	document.querySelector("head").appendChild(cssRefObject);
 }
 
